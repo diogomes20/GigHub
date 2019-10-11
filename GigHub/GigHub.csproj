@@ -182,13 +182,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\API\GenreDto.cs" />
-    <Compile Include="Controllers\API\GigDto.cs" />
+    <Compile Include="Dtos\GenreDto.cs" />
+    <Compile Include="Dtos\GigDto.cs" />
     <Compile Include="Controllers\API\GigsController.cs" />
     <Compile Include="Controllers\API\AttendancesController.cs" />
-    <Compile Include="Controllers\API\NotificationDto.cs" />
+    <Compile Include="Dtos\NotificationDto.cs" />
     <Compile Include="Controllers\API\NotificationsController.cs" />
-    <Compile Include="Controllers\API\UserDto.cs" />
+    <Compile Include="Dtos\UserDto.cs" />
     <Compile Include="Controllers\FolloweesController.cs" />
     <Compile Include="Controllers\API\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
@@ -283,6 +283,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\underscore-min.js" />

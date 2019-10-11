@@ -26,6 +26,7 @@ namespace GigHub.Controllers
                     g.ArtistId == userId && 
                     g.DateTime > DateTime.Now && 
                     !g.IsCanceled)
+                    .OrderBy(g => g.DateTime)
                 .Include(g => g.Genre)
                 .ToList();
 
@@ -39,6 +40,7 @@ namespace GigHub.Controllers
             var gigs = _context.Attendances
                 .Where(a => a.AttendeeId == userId)
                 .Select(a => a.Gig)
+                .OrderBy(a => a.DateTime)
                 .Include(g => g.Artist)
                 .Include(g => g.Genre)
                 .ToList();

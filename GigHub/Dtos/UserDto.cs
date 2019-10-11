@@ -1,5 +1,5 @@
-﻿namespace GigHub.Controllers.API
-{
+﻿namespace GigHub.Dtos
+{ 
     public class UserDto
     {
         public string Id { get; set; }
