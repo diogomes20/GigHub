@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -174,12 +177,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\MappingProfile.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\API\GenreDto.cs" />
+    <Compile Include="Controllers\API\GigDto.cs" />
     <Compile Include="Controllers\API\GigsController.cs" />
     <Compile Include="Controllers\API\AttendancesController.cs" />
+    <Compile Include="Controllers\API\NotificationDto.cs" />
+    <Compile Include="Controllers\API\NotificationsController.cs" />
+    <Compile Include="Controllers\API\UserDto.cs" />
     <Compile Include="Controllers\FolloweesController.cs" />
     <Compile Include="Controllers\API\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
@@ -229,6 +238,10 @@
     <Compile Include="Migrations\201910101354012_AddNotification.cs" />
     <Compile Include="Migrations\201910101354012_AddNotification.Designer.cs">
       <DependentUpon>201910101354012_AddNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910110808067_foo.cs" />
+    <Compile Include="Migrations\201910110808067_foo.Designer.cs">
+      <DependentUpon>201910110808067_foo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -353,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910101354012_AddNotification.resx">
       <DependentUpon>201910101354012_AddNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910110808067_foo.resx">
+      <DependentUpon>201910110808067_foo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
